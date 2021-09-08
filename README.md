@@ -2,13 +2,9 @@ https://blue-tetris.herokuapp.com/
 
 Node server with React client, creation tutorial : https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
 
-<<<<<<< HEAD
 `npm install` to download node_modules
 `npm start` in `.` to start server
 `npm start` in `./client` to start client
-=======
-`> npm install` to download node_modules
->>>>>>> 9e87d9271ae8e203e3e5eb7ba3392200ed03a5a0
 
 Pushing both on github and vogsphere, heroku is set up to deploy automatically from github master branch :
 
