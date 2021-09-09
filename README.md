@@ -21,10 +21,11 @@ Heroku is set up to deploy automatically from github master branch
 npm - Launch server and client
 
 ```
-                                // go to root folder if not already there
+...                             // go to root folder if not already there
 > npm install                   // install node_modules for server
 > npm start                     // start server
+...                             // open another terminal / tab
 > cd client                     // move inside client folder
 > npm install                   // install node_modules for client
-> npm start to start client    // start client
+> npm start                     // start client
 ```
