@@ -1,23 +1,30 @@
-https://blue-tetris.herokuapp.com/
+Live version : https://blue-tetris.herokuapp.com/
 
 Node server with React client, creation tutorial : https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
 
-`npm install` to download node_modules
+git - Clone and pull from github, push both on github and vogsphere :
 
-`npm start` in `.` to start server
+```
+> git clone https://github.com/sregnard42/blue-tetris.git`
+> cd blue-tetris
+> git remote set-url --add --push origin https://github.com/sregnard42/blue-tetris.git
+> git remote set-url --add --push origin git@vogsphere-v2.42.fr:vogsphere/intra-uuid-d5156516-c241-4505-bc88-53abd2227bc5-3634760
+> git remote show origin
+Fetch URL: https://github.com/sregnard42/blue-tetris.git
+Push  URL: https://github.com/sregnard42/blue-tetris.git`
+Push  URL: git@vogsphere-v2.42.fr:vogsphere/intra-uuid-d5156516-c241-4505-bc88-53abd2227bc5-3634760
+...
+```
 
-`npm start` in `./client` to start client
+Heroku is set up to deploy automatically from github master branch
 
-Pushing both on github and vogsphere, heroku is set up to deploy automatically from github master branch :
+npm - Launch server and client
 
-`> git remote set-url origin git@vogsphere-v2.42.fr:vogsphere/intra-uuid-d5156516-c241-4505-bc88-53abd2227bc5-3634760`
-
-`> git remote set-url --add --push origin https://github.com/sregnard42/blue-tetris.git`
-
-`> git remote show origin`
-    
-`Fetch URL: git@vogsphere-v2.42.fr:vogsphere/intra-uuid-d5156516-c241-4505-bc88-53abd2227bc5-3634760`
-
-`Push  URL: git@vogsphere-v2.42.fr:vogsphere/intra-uuid-d5156516-c241-4505-bc88-53abd2227bc5-3634760`
-
-`Push  URL: https://github.com/sregnard42/blue-tetris.git`
+```
+                                // go to root folder if not already there
+> npm install                   // install node_modules for server
+> npm start                     // start server
+> cd client                     // move inside client folder
+> npm install                   // install node_modules for client
+> npm start to start client    // start client
+```
